@@ -1,0 +1,62 @@
+//Navigating and creating folder
+# Navigate to the repository
+cd /mnt/d/HDL\ Bits
+
+# Create the folder
+mkdir -p "Mini Projects/Sachin/HDLBits/Getting started"
+
+# Verify the folder is created
+ls -l "Mini Projects/Sachin/HDLBits"
+
+//Uploading .v files using vim editor from Ubuntu terminal
+Navigate to the folder:
+cd /mnt/d/HDL\ Bits
+
+Open Vim to create/edit a Verilog file:
+
+vim "Mini Projects/Sachin/HDLBits/Getting started/your_verilog_file.v"
+
+In Vim, press i to enter insert mode.
+Now you can type or paste your Verilog code.
+Once you've entered your code, press Esc to exit insert mode.
+This takes you back to command mode.
+Save and exit Vim:
+
+:wq
+
+# Navigate to the repository
+cd /mnt/d/HDL\ Bits
+
+# Add the Verilog file
+git add "Mini Projects/Sachin/HDLBits/Getting started/Getting started.v"
+
+# Commit the changes
+git commit -m "Add Verilog file: Getting started.v"
+
+# Push to GitHub
+git push origin main
+
+//To remove files from github
+my file name to remove: AAC2M3H1.v
+
+# Remove the file from the working directory
+git rm Mini\ Projects/Sachin/HDLBits/AAC2M3H1.v
+
+# Commit the removal
+git commit -m "Remove AAC2M3H1.v"
+
+# Push the changes to GitHub
+git push origin main
+
+//To remove files, even works folders too..
+# Remove the file from the working directory
+git rm Getting_started.v
+
+# Commit the removal
+git commit -m "Remove Getting_started.v"
+
+# Push the changes to GitHub
+git push origin main
+
+
+
